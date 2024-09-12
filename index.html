@@ -12,11 +12,11 @@
             padding: 0;
             background: linear-gradient(to right, #f4f4f4, #e0e0e0);
         }
-       header {
-    position: relative; /* Ensure correct stacking of elements */
-    background: url('Designer (1).jpeg') no-repeat center center/cover; /* Set background image */
-    height: 100vh; /* Make the header full-screen height (optional) */
-    padding: 40px 0;
+        header {
+    position: relative;
+    background: url('assets/header-background.jpeg') no-repeat center center/cover;
+    height: 50vh; /* Reduce the header height to 50% of the viewport */
+    padding: 10px 0; /* Slightly reduce padding */
     text-align: center;
     color: #ffffff;
 }
@@ -28,28 +28,18 @@ header::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay to darken background */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
     z-index: 1;
 }
 
 header h1, header p {
     position: relative;
-    z-index: 2; /* Ensure text is above the background overlay */
-    color: #fff; /* Set text color to white */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Add shadow for contrast */
+    z-index: 2; /* Ensure text stays above the overlay */
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Text shadow for better contrast */
 }
+      
 
-header h1 {
-    font-size: 48px; /* Increase font size */
-    font-weight: bold; /* Make text bold */
-}
-
-header p {
-    font-size: 24px;
-    font-weight: 500;
-    color: #ddd; /* Slightly lighter color for subtext */
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8); /* Add shadow to subtext */
-}
         .container {
             width: 80%;
             margin: 0 auto;
