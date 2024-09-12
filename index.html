@@ -62,16 +62,24 @@ header h1, header p {
             transform: scale(1.05);
             box-shadow: 0 8px 16px rgba(0,0,0,0.3);
         }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: url('Designer (2).jpeg') no-repeat center center/cover;
-            color: white;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            box-shadow: 0 -4px 6px rgba(0,0,0,0.1);
-        }
+        /* Footer section */
+footer {
+    background: url('assets/footer-background.jpeg') no-repeat center center/cover; /* Keep footer background image */
+    width: 100%; /* Make the footer take the full width of the screen */
+    padding: 20px 0; /* Adjust padding to balance the layout */
+    text-align: center; /* Center the footer text */
+    color: #ffffff;
+    opacity: 0.3; /* Reduce opacity to make the footer more subtle */
+    position: relative; /* Ensure the footer stays at the bottom when scrolling */
+    bottom: 0; /* Align to the bottom of the page */
+}
+
+footer p {
+    margin: 0;
+    font-size: 16px; /* Adjust font size */
+    color: #fff;
+}
+
         a {
             color: #007bff;
             text-decoration: none;
