@@ -15,8 +15,9 @@
         header {
             background-color: #333;
             color: white;
-            padding: 10px 0;
+            padding: 20px;
             text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
         .container {
             width: 80%;
@@ -31,8 +32,13 @@
             width: 45%;
             margin: 2%;
             background-color: white;
-            padding: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .project:hover, .skill:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
         }
         footer {
             text-align: center;
@@ -42,6 +48,24 @@
             position: fixed;
             bottom: 0;
             width: 100%;
+            box-shadow: 0 -4px 6px rgba(0,0,0,0.1);
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #0056b3;
+        }
+        .section h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        .project h4, .skill h3 {
+            margin: 0;
         }
     </style>
 </head>
@@ -74,50 +98,50 @@
             <h3>Music Videos</h3>
             <div class="project">
                 <h4>Music Video 1</h4>
-                <a href="https://www.youtube.com/watch?v=05h_qaIngHo">Watch on YouTube</a>
+                <a href="https://www.youtube.com/watch?v=05h_qaIngHo" target="_blank">Watch on YouTube</a>
             </div>
             <div class="project">
                 <h4>Music Video 2</h4>
-                <a href="https://www.youtube.com/watch?v=j0Ahr8KBe38">Watch on YouTube</a>
+                <a href="https://www.youtube.com/watch?v=j0Ahr8KBe38" target="_blank">Watch on YouTube</a>
             </div>
 
             <h3>Short Movies</h3>
             <div class="project">
                 <h4>Short Movie 1</h4>
-                <a href="https://www.youtube.com/watch?v=geJKP1P-OB8">Watch on YouTube</a>
+                <a href="https://www.youtube.com/watch?v=geJKP1P-OB8" target="_blank">Watch on YouTube</a>
             </div>
             <div class="project">
                 <h4>Short Movie 2</h4>
-                <a href="https://www.youtube.com/watch?v=-t_UOrgp5ko">Watch on YouTube</a>
+                <a href="https://www.youtube.com/watch?v=-t_UOrgp5ko" target="_blank">Watch on YouTube</a>
             </div>
 
             <h3>Educational Content</h3>
             <div class="project">
                 <h4>Educational Video</h4>
-                <a href="https://www.youtube.com/watch?v=sJUWkjTij0o">Watch on YouTube</a>
+                <a href="https://www.youtube.com/watch?v=sJUWkjTij0o" target="_blank">Watch on YouTube</a>
             </div>
 
             <h3>Instagram Reels/Shorts</h3>
             <div class="project">
                 <h4>Instagram Reel 1</h4>
-                <a href="https://www.instagram.com/p/C_kqs7zvNG3/">View on Instagram</a>
+                <a href="https://www.instagram.com/p/C_kqs7zvNG3/" target="_blank">View on Instagram</a>
             </div>
             <div class="project">
                 <h4>Instagram Reel 2</h4>
-                <a href="https://www.instagram.com/p/C_uj0GdPwBN/">View on Instagram</a>
+                <a href="https://www.instagram.com/p/C_uj0GdPwBN/" target="_blank">View on Instagram</a>
             </div>
 
             <h3>Concept Video</h3>
             <div class="project">
                 <h4>Concept Video</h4>
-                <a href="https://www.youtube.com/watch?v=6QSJyy98h0g">Watch on YouTube</a>
+                <a href="https://www.youtube.com/watch?v=6QSJyy98h0g" target="_blank">Watch on YouTube</a>
             </div>
         </div>
 
         <!-- Contact and Social Links -->
         <footer>
             <p>Contact: <a href="mailto:vp7353182855@gmail.com">vp7353182855@gmail.com</a></p>
-            <p>Find me on: <a href="https://www.instagram.com/rockz_vish/">Instagram</a></p>
+            <p>Find me on: <a href="https://www.instagram.com/rockz_vish/" target="_blank">Instagram</a></p>
         </footer>
     </div>
 </body>
