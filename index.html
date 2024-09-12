@@ -13,43 +13,43 @@
             background: linear-gradient(to right, #f4f4f4, #e0e0e0);
         }
        header {
-            background: url('assets/header-background.jpeg') no-repeat center center/cover;
-            color: #ffffff;
-            padding: 40px 0;
-            text-align: center;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
+    position: relative; /* Ensure correct stacking of elements */
+    background: url('assets/header-background.jpeg') no-repeat center center/cover; /* Set background image */
+    height: 100vh; /* Make the header full-screen height (optional) */
+    padding: 40px 0;
+    text-align: center;
+    color: #ffffff;
+}
 
-        header h1 {
-            font-size: 48px;
-            font-weight: bold;
-            color: #fff;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
-            margin: 0;
-        }
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay to darken background */
+    z-index: 1;
+}
 
-        header p {
-            font-size: 24px;
-            font-weight: 500;
-            color: #ddd;
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
-        }
+header h1, header p {
+    position: relative;
+    z-index: 2; /* Ensure text is above the background overlay */
+    color: #fff; /* Set text color to white */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Add shadow for contrast */
+}
 
-        header::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.5);
-            z-index: 1;
-        }
+header h1 {
+    font-size: 48px; /* Increase font size */
+    font-weight: bold; /* Make text bold */
+}
 
-        header h1, header p {
-            position: relative;
-            z-index: 2;
-        }
+header p {
+    font-size: 24px;
+    font-weight: 500;
+    color: #ddd; /* Slightly lighter color for subtext */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8); /* Add shadow to subtext */
+}
         .container {
             width: 80%;
             margin: 0 auto;
