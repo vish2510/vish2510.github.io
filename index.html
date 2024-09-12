@@ -13,14 +13,15 @@
             background: linear-gradient(to right, #f4f4f4, #e0e0e0);
         }
         header {
-    position: relative;
-    background: url('Designer (1).jpeg') no-repeat center center/cover;
-    height: 50vh; /* Reduce the header height to 50% of the viewport */
-    padding: 10px 0; /* Slightly reduce padding */
-    text-align: center;
-    color: #ffffff;
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Align items vertically */
+    justify-content: space-between; /* Distribute space between elements */
+    padding: 20px; /* Add padding */
+    background-color: #f5f5f5; /* Background color */
 }
-
+.header-content {
+    flex: 1; /* Allow header content to take available space */
+}
 header::before {
     content: "";
     position: absolute;
@@ -39,40 +40,37 @@ header h1, header p {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Text shadow for better contrast */
 }
         /* Profile Picture */
+
 .profile-pic {
-    position: absolute; /* Position relative to the header */
-    bottom: 20px; /* Distance from the bottom of the header */
-    left: 20%; /* Move the profile picture to the right, adjust percentage as needed */
-    width: 180px; /* Increase the width of the profile picture */
-    height: 180px; /* Increase the height of the profile picture */
-    border-radius: 50%; /* Make the image round */
-    border: 4px solid #fff; /* White border around the image */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Optional shadow effect */
-    opacity: 5; /* Increase opacity */
+    width: 180px; /* Set profile picture size */
+    height: 180px; /* Set profile picture size */
+    border-radius: 50%; /* Round the image */
+    border: 4px solid #fff; /* Border around image */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    opacity: 0.9; /* Increase opacity */
+    margin: 0 20px; /* Margin around the image */
 }
 
 /* About Me Section */
 .about-me {
-    font-family: 'Times New Roman', serif; /* Ensure Times New Roman font is applied */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6); /* Shadow for better visibility */
+    font-family: 'Times New Roman', serif; /* Font style */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6); /* Text shadow */
 }
 
 /* About Me Heading */
 .about-me h1 {
-    margin: 0; /* Remove default margin */
-    font-size: 2em; /* Font size for heading */
-    color: #333; /* Dark color for heading */
+    margin: 0; /* Remove margin */
+    font-size: 2em; /* Font size */
+    color: #333; /* Text color */
 }
 
 /* About Me Paragraphs */
 .about-me p {
-    margin: 0.5em 0; /* Margin around paragraphs */
-    color: #666; /* Medium gray color for text */
+    margin: 0.5em 0; /* Margin for paragraphs */
+    color: #666; /* Text color */
 }
 
         
-      
-
         .container {
             width: 80%;
             margin: 0 auto;
