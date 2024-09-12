@@ -10,12 +10,12 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background: linear-gradient(to right, #f4f4f4, #e0e0e0);
         }
         header {
-            background-color: #333;
+            background: url('header-background.jpg') no-repeat center center/cover;
             color: white;
-            padding: 20px;
+            padding: 40px 0;
             text-align: center;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
@@ -33,6 +33,7 @@
             margin: 2%;
             background-color: white;
             padding: 15px;
+            border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.2);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
@@ -43,7 +44,7 @@
         footer {
             text-align: center;
             padding: 20px;
-            background-color: #333;
+            background: url('footer-background.jpg') no-repeat center center/cover;
             color: white;
             position: fixed;
             bottom: 0;
@@ -59,13 +60,24 @@
             color: #0056b3;
         }
         .section h2 {
-            border-bottom: 2px solid #333;
-            padding-bottom: 5px;
+            border-bottom: 3px solid #007bff;
+            padding-bottom: 10px;
             display: inline-block;
             margin-bottom: 20px;
+            color: #333;
         }
         .project h4, .skill h3 {
             margin: 0;
+        }
+        /* Additional Styling */
+        .section {
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .project, .skill {
+            background: #f9f9f9;
         }
     </style>
 </head>
