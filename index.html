@@ -13,15 +13,14 @@
             background: linear-gradient(to right, #f4f4f4, #e0e0e0);
         }
         header {
-    display: flex; /* Use flexbox for layout */
-    align-items: center; /* Align items vertically */
-    justify-content: space-between; /* Distribute space between elements */
-    padding: 20px; /* Add padding */
-    background-color: #f5f5f5; /* Background color */
+    position: relative;
+    background: url('Designer (1).jpeg') no-repeat center center/cover;
+    height: 50vh; /* Reduce the header height to 50% of the viewport */
+    padding: 10px 0; /* Slightly reduce padding */
+    text-align: center;
+    color: #ffffff;
 }
-.header-content {
-    flex: 1; /* Allow header content to take available space */
-}
+
 header::before {
     content: "";
     position: absolute;
@@ -40,15 +39,16 @@ header h1, header p {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Text shadow for better contrast */
 }
         /* Profile Picture */
-
 .profile-pic {
-    width: 180px; /* Set profile picture size */
-    height: 180px; /* Set profile picture size */
-    border-radius: 50%; /* Round the image */
-    border: 4px solid #fff; /* Border around image */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Shadow effect */
-    opacity: 0.9; /* Increase opacity */
-    margin: 0 20px; /* Margin around the image */
+    position: absolute; /* Position relative to the header */
+    bottom: 20px; /* Distance from the bottom of the header */
+    left: 20%; /* Move the profile picture to the right, adjust percentage as needed */
+    width: 180px; /* Increase the width of the profile picture */
+    height: 180px; /* Increase the height of the profile picture */
+    border-radius: 50%; /* Make the image round */
+    border: 4px solid #fff; /* White border around the image */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Optional shadow effect */
+    opacity: 5; /* Increase opacity */
 }
 
 /* About Me Section */
