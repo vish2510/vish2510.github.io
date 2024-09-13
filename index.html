@@ -12,11 +12,12 @@
             padding: 0;
             background: linear-gradient(to right, #f4f4f4, #e0e0e0);
         }
-        header {
+        /* Header */
+header {
     position: relative;
     background: url('Designer (1).jpeg') no-repeat center center/cover;
-    height: 50vh; /* Reduce the header height to 50% of the viewport */
-    padding: 10px 0; /* Slightly reduce padding */
+    height: 50vh;
+    padding: 10px 0;
     text-align: center;
     color: #ffffff;
 }
@@ -28,47 +29,53 @@ header::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    background: rgba(0, 0, 0, 0.5);
     z-index: 1;
 }
 
 header h1, header p {
     position: relative;
-    z-index: 2; /* Ensure text stays above the overlay */
+    z-index: 2;
     color: #fff;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Text shadow for better contrast */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
 }
-        /* Profile Picture */
+
+/* Profile Picture */
 .profile-pic {
-    position: absolute; /* Position relative to the header */
-    bottom: 20px; /* Distance from the bottom of the header */
-    left: 20%; /* Move the profile picture to the right, adjust percentage as needed */
-    width: 180px; /* Increase the width of the profile picture */
-    height: 180px; /* Increase the height of the profile picture */
-    border-radius: 50%; /* Make the image round */
-    border: 4px solid #fff; /* White border around the image */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Optional shadow effect */
-    opacity: 5; /* Increase opacity */
+    position: absolute;
+    bottom: 20px;
+    left: 15%; /* Adjusted to bring the profile picture slightly left */
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    opacity: 1; /* Set proper opacity */
 }
 
 /* About Me Section */
 .about-me {
-    font-family: 'Times New Roman', serif; /* Font style */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6); /* Text shadow */
+    position: absolute;
+    bottom: 20px;
+    left: 40%; /* Positioned to the right of the profile picture */
+    font-family: 'Times New Roman', serif;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+    z-index: 2;
 }
 
 /* About Me Heading */
 .about-me h1 {
-    margin: 0; /* Remove margin */
-    font-size: 2em; /* Font size */
-    color: #333; /* Text color */
+    margin: 0;
+    font-size: 2em;
+    color: #fff;
 }
 
 /* About Me Paragraphs */
 .about-me p {
-    margin: 0.5em 0; /* Margin for paragraphs */
-    color: #666; /* Text color */
+    margin: 0.5em 0;
+    color: #fff;
 }
+
 
         
         .container {
