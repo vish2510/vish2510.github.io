@@ -189,6 +189,56 @@ footer p {
         html {
     scroll-behavior: smooth;
 }
+/* Existing Header and Profile Pic Styles */
+
+/* Projects Container */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+    gap: 20px; /* Space between the columns */
+    margin: 50px auto; /* Centering the section */
+    padding: 0 20px; /* Some padding around the grid */
+}
+
+/* Individual Project Style */
+.project {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+/* Project Image */
+.project img {
+    max-width: 100%;
+    border-radius: 10px; /* Rounded corners for images */
+}
+
+/* Project Title */
+.project h3 {
+    font-size: 1.5em;
+    margin: 15px 0 10px;
+}
+
+/* Project Description */
+.project p {
+    font-size: 1em;
+    color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .projects {
+        grid-template-columns: 1fr; /* Stacks the projects vertically on smaller screens */
+    }
+}
+
     </style>
 </head>
 <body>
